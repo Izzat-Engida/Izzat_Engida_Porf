@@ -1,0 +1,141 @@
+.projects{
+color: white;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, auto);
+gap: 20px;
+}
+.project:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.projecttech{
+  align-items: flex-end;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 1.5rem;
+  padding-left: 25px;
+}
+.projectdesc{
+  font-size: 1.5rem;
+}
+.project{
+  background-color: rgb(2, 13, 31);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.arrowicon{
+  font-size:2rem;
+  transform: rotate(45deg);
+  border: white 1px solid;
+  width:3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;}
+.arrowicon:hover{
+  background-color: rgb(38, 227, 20);
+  transform: rotate(-5deg);
+  cursor: pointer;
+  transition: trasform 0.3s ease,background-color 0.3s ease;
+}
+
+:root{
+  background: rgb(2,13,31);
+}
+.Resume{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.ResumeOut{
+  align-self: center;
+}
+.ResumeMenu{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-right:50px ;
+}
+.nav2{
+  text-decoration: none;
+  color:white;
+  border: 2px none;
+  margin: 10px;
+  border-radius: 5px;
+  background: rgba(88, 98, 117, 0.187);
+}
+.nav2:hover{
+  background: rgb(38, 227, 20);
+}
+.nav2.active{
+  background: rgb(38, 227, 20);
+}
+.app{
+ display:flex;
+ justify-content: flex-end;
+ background: rgb(2,13,31);
+ color:white;
+ min-height: 100vh;
+}
+
+.home{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.con{
+  padding-top: 60px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.nav {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: color 0.5s;
+  background: rgb(2,13,31);
+  position: relative; 
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 2px;
+  background: rgb(38, 227, 20);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.nav:hover {
+  color: rgb(38, 227, 20);
+}
+
+.nav:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav.active {
+  color: rgb(38, 227, 20);
+}
+
+.nav.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
